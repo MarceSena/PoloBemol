@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Client extends Model
 {
    protected $table = 'clients';
+
+   public function  relAdresseClient(){
+        return $this->hasOne(Client::class);
+    }
 }

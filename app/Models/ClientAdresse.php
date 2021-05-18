@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class ClientAdresse extends Model
 {
-    use HasFactory;
+    protected $table = 'client_adresses';
+
+    public function  relClient(){
+        return $this->hasOne(ClientAdresse::class);
+}
 }

@@ -3,18 +3,31 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\ClientAdresse;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
+
+    private $objClient;
+    private $objClientAdresse;
+
+
+    public function __construct(){
+        $this->objClient = new Client();
+        $this->objClientAdresse = new ClientAdresse();
+
+    }
+
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view(view: 'index');
+    {   $client = $this->objClient->All();
+        return view('index', compact('client'));
     }
 
     /**
