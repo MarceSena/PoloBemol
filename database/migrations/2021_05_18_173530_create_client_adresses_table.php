@@ -15,12 +15,12 @@ class CreateClientAdressesTable extends Migration
     {
         Schema::create('client_adresses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('client_id')->constrained('clients')->onUpdate('cascade')->onDelete('cascade');           
+            $table->unsignedBiginteger('client_id')->constrained('clients')->onUpdate('cascade')->onDelete('cascade');           
             $table->string('cep');
             $table->string('state');
             $table->string('city');
             $table->string('street');
-            $table->string('complement');
+            $table->string('district');
             $table->string('number');
             $table->timestamps();
         });

@@ -9,7 +9,20 @@ class ClientAdresse extends Model
 {
     protected $table = 'client_adresses';
 
-    public function  relClient(){
-        return $this->hasOne(ClientAdresse::class);
+    protected $fillable = [
+            'cep',
+            'state',
+            'city',
+            'street',
+            'district',
+            'number',
+            'client_id'
+           
+    ];
+
+    public function  relClients(){
+        //return $this->hasOne(Clients::class);
+        return $this->hasOne(related:'App\Models\Client', foreignKey:'id',localKey:'client_id' );
+      
 }
 }

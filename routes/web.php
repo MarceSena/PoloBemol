@@ -16,5 +16,4 @@ use App\Http\Controllers\ClientController;
 
 Route::resources([
     'clients' => ClientController::class,
-    'create' => ClientController::class,
 ]);

@@ -27,6 +27,7 @@ class ClientController extends Controller
      */
     public function index()
     {   $client = $this->objClient->All();
+        //dd( $this->objClient->find(1)->relAdresses);
         return view('index', compact('client'));
     }
 
@@ -37,7 +38,7 @@ class ClientController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**
@@ -48,7 +49,12 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        $client = Client::create($request->all());
+        $client->relAdresses()->create($input);
+         
+      return redirect('clients');
+      
     }
 
     /**
@@ -57,9 +63,10 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function show(Client $client)
+    public function show($id)
     {
-        //
+        $client = $this->objClient->find($id);
+        return view('show', compact('client'));
     }
 
     /**
@@ -68,9 +75,10 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function edit(Client $client)
+    public function edit($id)
     {
-        //
+        $clients = $this->objClient->find($id);
+        return view('create', compact('clients'));
     }
 
     /**
@@ -80,9 +88,16 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Client $client)
+    public function update(Request $request, $id)
     {
-        //
+        $clients = Client::find($id);
+        $inputClients = $request->except('_method', '_token');
+        $inputAdss = $request->except('_method', '_token', 'name', 'email', 'phone');
+        
+        $clients->update($inputClients);
+        $clients->relAdresses()->update($inputAdss);
+        
+        return redirect('clients');
     }
 
     /**
@@ -91,8 +106,13 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Client $client)
+    public function destroy($id)
     {
-        //
+       $client = $this->objClient->find($id);
+       $client ->delete();
+       $client ->relAdresses()->delete();
+
+       return($client)?"deletado":"não deletado";
+
     }
 }
