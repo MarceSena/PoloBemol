@@ -1,5 +1,6 @@
 @extends('templates.template')
 @section('content')
+    <div class="create">
     <h1 class="text-center">@if(isset($clients))EDITAR @else Cadastrar @endif</h1>
     <div class="col-8 m-auto">
     

@@ -1,15 +1,11 @@
 @extends('templates.template')
 @section('content')
+
     
-    <div class="text-center mt-3 mb-4">
-    <a href="{{url('clients/create')}}">
-                <button class="btn btn-success">create</button>
-                </a>
-    </div>
-    
-    <div class = "col-8 m-auto">
+  
+
     @csrf 
-   <table class="table table-dark table-striped">
+    <table class="table">
   <thead>
     <tr>
       <th scope="col">id</th>
