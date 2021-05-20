@@ -27,13 +27,13 @@
             <td>{{$adresses->city}}</td>
             <td>
                 <a href="{{url("clients/$clients->id")}}" class="">
-                <button class="btn btn-dark">Read</button>
+                <button class="btn btn-dark btn-lg ">Read</button>
                 </a>
                 <a href="{{url("clients/$clients->id/edit")}}" class="">
-                <button class="btn btn-primary">Updade</button>
+                <button class="btn btn-primary btn-lg ">Updade</button>
                 </a>
                 <a href="{{url("clients/$clients->id")}}" class="js-del">
-                <button class="btn btn-danger">Deletar</button>
+                <button class="btn btn-danger btn-lg">Deletar</button>
                 </a>
             </td>
     </tr>

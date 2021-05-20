@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    
 
     <!-- Adicionando JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -30,13 +29,17 @@
             <ul>
                 <li><a href="{{url('clients')}}">Clientes</a></li>
                 <li><a href="{{url('clients/create')}}">Cadastrar Clientes</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="{{url('email')}}">Enviar Emails</a></li>
+                
             </ul>
-        </nav>
-
-        
+            <div class="footer">
+                <p class="name"> POLO SERIA O DEUS DOS VENTOS : MENSAGEIRO DE TUPÃ</p>
+            </div> 
+        </nav>     
     </div>
-    </header>
+</header>
+    
+
     <main class="col-md-8 ms-sm-auto col-lg-9 px-md-4 mt-5">
       @yield('content')
     
@@ -44,8 +47,9 @@
     
     <script src="{{url("assets/js/delete.js")}}"></script>
     <script src="{{url("assets/js/cep.js")}}"></script>
-    <!-- jquery cdn link  -->
+    <script src="{{url("assets/js/fill.js")}}"></script>
 
-<!-- custom js file link  -->
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

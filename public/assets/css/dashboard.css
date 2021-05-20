@@ -56,13 +56,23 @@ header{
 }
 
 header .user .name{
+  margin-top: 10%;
   font-size: 3.5rem;
   color:white ;
 }
+
 header .user .post{
-  font-size: 2rem;
+  margin-top: 10%;
+  font-size: 1.5rem;
   color: #eee;
 }
+
+header .footer .name{
+  margin-top: 70%;
+  font-size: 1.3rem;
+  color: #eee;
+}
+
 
 header .navbar{
   width: 100%;
@@ -108,15 +118,19 @@ header .navbar ul li :hover{
   color: rgb(121, 121, 121);
   font-size: 1.5rem;
   border-radius: 1rem;
-  align-items: center;
-  justify-content: center;
   flex-flow: column;
-  text-align: center;
   
 }
 .form-control{
   font-size: 1.5rem;
   margin: 1.5rem 0;
-  
 }
   
+.form-select{
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+.bnt {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}

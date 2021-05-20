@@ -1,7 +1,9 @@
 <?php
+ 
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,9 @@ use App\Http\Controllers\ClientController;
 |
 */
 
+
 Route::resources([
     'clients' => ClientController::class,
+    'email' => EmailController::class,
 ]);
+
