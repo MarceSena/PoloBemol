@@ -21,11 +21,12 @@ Esta aplicação foi desenvolvida em PHP Laravel
 -    `MAIL_ENCRYPTION=""`
 -    `MAIL_FROM_ADDRESS=contato@bemoldigital.com.br`
 -    `MAIL_FROM_NAME="${APP_NAME}"`
--disponivel em  em [Mailtrap](https://mailtrap.io/)
--Rode o comando `php artisan key:generate`, para gerar uma nova chave para o projeto, que poderá ser visto em `.env`.
 
--Ao final do processo feito anteriormente rode o comando `docker compose up` e aguarde a finalização
--Para colocar as tabelas no Banco de dadaos rode `php artisan migrate`
+- disponivel em  em [Mailtrap](https://mailtrap.io/)
+- Rode o comando `php artisan key:generate`, para gerar uma nova chave para o projeto, que poderá ser visto em `.env`.
+
+- Ao final do processo feito anteriormente rode o comando `docker compose up` e aguarde a finalização
+- Para colocar as tabelas no Banco de dadaos rode `php artisan migrate`
 
 ### Rotas da aplicação
 -   Em seu navegado coloque a url `http://localhost/clients`
