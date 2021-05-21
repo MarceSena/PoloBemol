@@ -1,0 +1,14 @@
+1. A solução deve ser disponibilizada em Cloud ou On-premise?
+Se tratando da aplicação desenvolvida,sua implantação preferencialmente seria em um plataforma Cloud, visto que a natureza da aplicação pede para utilizamos serviços de envio de e-mail e banco de dados, logo o Cloud possibilita a escalabilidade e manutenção da aplicação sem um custo monetário elevado  em relação a compra de mais poder computacional.
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa solução, responda qual ferramenta acredita ser apropriada para o controle de tarefas da equipe, a ferramenta é ágil?
+Utilizaria o quadro de Kanban por sua natureza de simples implementação, além de, o quadro torna possível visualizar o fluxo de trabalho, delimitar o trabalho em progressos e gerenciar o fluxo de atividades existente. Para a realização desse projeto, adotaria o uso da aplicação Trello, que serve para monitoramento de atividades, o sistema é online e isso facilita em relação à criação, controle das atividades e também ao fato de termos acesso ao monitoramento de forma distribuída globalmente.
+
+3. Você se sente capaz de liderar esta equipe? Por quê?
+Sim, muito pelo motivo da aplicação não ser complexa. Acredito que, delimitar e atribuir  tarefas, bem como, guiar a equipe para que cada integrante possa exercer suas atividades de acordo com suas capacidades técnicas e da melhor forma possível, não seria afetado por minha falta de experiência. Apesar de gostar de desafios, uma aplicação bem mais complexa e uma equipe com o dobro de participantes, por exemplo, ficaria fora do meu escopo atual.
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria? 
+Levando em consideração a construção de uma ferramenta de comunicação e marketing , colocaria uma funcionalidade para enviar mensagens ao whatsapp dos clientes cadastrados, assim tendo a oportunidade de ter um relacionamento mais próximo com ele, visto que a grande maioria das pessoas atualmente utilizam o whatsapp. A ideia seria trabalhar o fundo do funil com ofertas personalizadas para cada indivíduo. 
+
+5. Acha válido esse desafio para o processo que está participando?
+Muito válido, para projetar e desenvolver aplicações além de todo conhecimento técnico necessário, o Engenheiro de Software precisa entender o cenário em que ele está atuando.Coisas como, tempo, infraestrutura e organização são fundamentais durante o processo de desenvolvimento de uma aplicação.
